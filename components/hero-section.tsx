@@ -1,17 +1,14 @@
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      <Image
+      <img
         src="/images/hero.jpg"
         alt="Строительная площадка"
-        fill
-        className="object-cover"
-        priority
-        quality={85}
+        className="absolute inset-0 h-full w-full object-cover"
+        loading="eager"
       />
       <div className="absolute inset-0 bg-background/75" />
 

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
 const projects = [
@@ -45,11 +44,10 @@ export function ProjectsSection() {
               className="group relative overflow-hidden rounded-lg border border-border"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
+                <img
                   src={project.image}
                   alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-background/0 transition-colors group-hover:bg-background/20" />
               </div>
